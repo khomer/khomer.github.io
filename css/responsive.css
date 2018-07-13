@@ -1,0 +1,220 @@
+/*==================================================
+			Bootstrap 3 Media Queries
+==================================================*/
+
+/* Large Devices (Desktops & Laptops) */
+
+@media (max-width: 1400px) {
+  .cafe-slowly-nav-wrapper {
+    padding: 0;
+  }
+  .content-box {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 1199px) {
+  /*  Mobile Menu */
+  .navbar-brand {
+    padding: 15px 0 0 0;
+  }
+
+  .navbar-header {
+    background-color: transparent;
+    height: auto;
+  }
+  .navbar {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .navbar-nav {
+    float: left;
+  }
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0.7);
+    margin-top: 30px;
+  }
+}
+
+/* Medium Devices (Landscape Tablets & Medium Desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* ABOUT CAFE SLOWLY */
+  .content-box-1,
+  .content-box-2,
+  .content-box-3,
+  .content-box-4,
+  .content-box-5 {
+    width: 450px;
+    margin-left: 0;
+  }
+}
+
+/* Small Devices (Portrait Tablets & Small Desktops) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .fa-home {
+    font-size: 25px;
+  }
+
+  /* HOME */
+  #home-content-box-inner h1 {
+    font-size: 60px;
+  }
+
+  /* TODAY'S SPECIAL */
+  #specials .img-wrapper img {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  /* ABOUT CAFE SLOWLY */
+  .content-box-1,
+  .content-box-2,
+  .content-box-3,
+  .content-box-4,
+  .content-box-5 {
+    width: auto;
+    height: auto;
+    max-width: 650px;
+    margin-left: 0;
+  }
+  /* FOOTER */
+  .store-info,
+  .fa-paw-group {
+    padding: 0 0 20px 0;
+  }
+}
+
+/* Extra Small Devices (Landscape Phones & Portrait Tablets) */
+@media (max-width: 767px) {
+  /* HOME */
+  #home-content-box-inner h1 {
+    font-size: 45px;
+    padding: 50px;
+  }
+
+  .home-banner h2 {
+    font-size: 170%;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+
+  #specials .img-wrapper img {
+    max-width: 350px;
+    margin: auto;
+  }
+
+  .party-animal {
+    margin-top: 20px;
+  }
+
+  .happy-hour {
+    height: auto;
+  }
+  .happy-hour h1 {
+    font-size: 35px;
+    padding: 0;
+  }
+
+  .content-title h3 {
+    font-size: 27px;
+  }
+
+  /* ABOUT CAFE SLOWLY */
+  .content-box-1,
+  .content-box-2,
+  .content-box-3,
+  .content-box-4,
+  .content-box-5 {
+    width: auto;
+    height: auto;
+    margin-left: 0;
+  }
+  .content-box-2 {
+    border: 1px solid #dcedcd;
+  }
+
+  .hover-store figure {
+    background: #fff;
+  }
+
+  .hover-store figure img {
+    max-height: 230px;
+  }
+
+  #inquiry h2 {
+    font-size: 22px;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  /* FOOTER */
+  .store-info {
+    padding: 0;
+  }
+
+  #footer .container-fluid {
+    margin-top: 30px;
+    padding-top: 20px;
+  }
+
+  .copyright {
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/* Extra Small Devices (Portrait Phones & Smaller devices) */
+@media (max-width: 480px) {
+  .navbar-brand img,
+  .footer-navbar-brand img {
+    width: 180px;
+  }
+
+  .fa-home {
+    font-size: 20px;
+  }
+  .img-special {
+    max-height: 300px;
+  }
+  .special-content-box {
+    padding: 0;
+  }
+  .special-content-box h2 {
+    font-size: 20px;
+  }
+  th,
+  td {
+    padding: 10px !important;
+    font-size: 110%;
+  }
+
+  /* ABOUT CAFE SLOWLY */
+  #about-cafe-slowly .row [class*='col-'] {
+    padding: 0;
+  }
+  .content-box-1,
+  .content-box-5 {
+    padding: 20px;
+    height: auto;
+  }
+
+  .store-wrapper-header {
+    height: auto;
+  }
+  .store-wrapper-header h3 {
+    font-size: 150%;
+  }
+
+  .hover-store figure img {
+    max-height: 200px;
+  }
+
+  .footer-navbar-brand img {
+    max-width: 120px;
+  }
+}
+
+/* Extra Small Devices (Portrait Phones & Smaller devices) */
+@media (max-width: 320px) {
+}

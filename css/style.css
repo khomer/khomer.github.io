@@ -1,0 +1,538 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+  color: #41464b;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+h3 {
+  color: #41464b;
+  text-transform: uppercase;
+}
+
+.text-cafe-slowly {
+  font-family: 'Crafty Girls';
+  color: #ff3333;
+  text-transform: capitalize;
+}
+.fa-home {
+  font-size: 27px;
+}
+
+/*====================================================
+                        HOME
+======================================================*/
+
+#home {
+  height: 100%;
+}
+
+#home-cover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+    url(../img/home.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#home-content-box {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+#home-content-box-inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+#home-content-box-inner h1 {
+  font-size: 80px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#home-content-box-inner span {
+  color: #ff3333;
+}
+
+.home-banner {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  left: 0;
+  background-color: #ff3333;
+}
+
+.home-banner h2 {
+  position: relative;
+  font-family: 'Crafty Girls';
+  color: #fff;
+  font-size: 190%;
+  text-align: right;
+  margin: 0 70px 0 0;
+  padding: 17px;
+}
+
+/*====================================================
+                       ANIMATE
+======================================================*/
+#about-cafe-slowly .content-box-1,
+#about-cafe-slowly .content-box-3,
+#about-cafe-slowly .content-box-5 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+#about-cafe-slowly .content-box-1 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+#about-cafe-slowly .content-box-3 {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+#about-cafe-slowly .content-box-5 {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
+/*====================================================
+                       CONTENT (Generic)
+======================================================*/
+
+.content-box {
+  padding: 80px 0;
+}
+.content-title h3 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+.content-title-underline {
+  width: 50px;
+  height: 5px;
+  background-color: #ff3333;
+  margin: 0 auto 50px auto;
+}
+
+/* Magnify Image On Mouse Over */
+.img-wrapper {
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+.img-wrapper img:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  cursor: zoom-in;
+}
+
+/*====================================================
+                       TODAY'S SPECIALS
+======================================================*/
+#specials {
+  background: linear-gradient(#ffffff, #f7f7f7);
+}
+
+.special-content-box {
+  text-align: center;
+  padding: 0 50px 0 50px;
+}
+
+.special-content-box h2 {
+  background: linear-gradient(to right, #ff3333, yellow);
+  color: white;
+  font-size: 180%;
+  padding: 15px;
+  margin: 0 0 40px 0;
+  border-radius: 2px;
+}
+.special-content-box h4 {
+  font-size: 150%;
+}
+.special-price {
+  font-size: 150%;
+  color: #ff3333;
+  font-weight: 600;
+  padding: 10px 0 0 0;
+}
+.img-special {
+  margin-top: 20px;
+}
+.party-animal {
+  margin: auto;
+}
+
+/*====================================================
+                ABOUT CAFE SLOWLY
+======================================================*/
+#about-cafe-slowly {
+  background: linear-gradient(#fff, #f7f7f7);
+  padding: 80px 20px;
+}
+#about-cafe-slowly .container {
+  padding-top: 20px;
+}
+
+#about-cafe-slowly .row {
+  padding: 0;
+  margin: 0;
+}
+
+#about-cafe-slowly figure {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70px;
+  height: 70px;
+}
+
+#about-cafe-slowly img {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+#about-cafe-slowly img:hover {
+  opacity: 0.7;
+}
+
+.content-box-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(../img/cafe-slowly/bg-about.jpg);
+  font-family: 'Crafty Girls';
+  height: 520px;
+  margin: 0 0 21px 0;
+  padding: 50px;
+  border: 1px solid lightgray;
+}
+.content-box-2 {
+  height: 250px;
+  margin: 0 0 21px -10px;
+  border: 1px solid lightgray;
+}
+.content-box-3 {
+  height: 250px;
+  margin: 0 0 21px -10px;
+}
+.content-box-4 {
+  height: 250px;
+  margin: 0 0 21px 0;
+}
+.content-box-5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(../img/cafe-slowly/bg-about.jpg);
+
+  height: 250px;
+  margin: 0 0 21px -10px;
+  padding: 40px;
+  text-align: center;
+  border: 1px solid lightgray;
+}
+
+#about-cafe-slowly table {
+  text-align: left;
+}
+
+.chef {
+  width: 102px;
+  height: 160px;
+  margin: auto;
+}
+.content-box-1 h3 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 190%;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.content-box-1 p::first-letter,
+.content-box-1 h4::first-letter {
+  font-size: 150%;
+}
+
+.bg-lightgray {
+  background-color: #f5f5f5;
+}
+
+/*====================================================
+                       MAIN MENU
+======================================================*/
+#main-menu {
+  background: linear-gradient(#ffffff, #f7f7f7);
+}
+#main-menu table {
+  margin-top: 40px;
+}
+#main-menu th {
+  background-color: #ff3333;
+}
+#main-menu th,
+td {
+  padding: 16px !important;
+  font-size: 130%;
+}
+#main-menu table h3 {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.toast-wrapper figure img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transform: rotate(15deg) scale(1.2);
+  transform: rotate(15deg) scale(1.2);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.toast-wrapper figure:hover img {
+  -webkit-transform: rotate(0) scale(1.4);
+  transform: rotate(0) scale(1.4);
+}
+
+.dessert-wrapper figure img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
+}
+
+.dessert-wrapper figure:hover img {
+  -webkit-transform: rotate(15deg) scale(1.5);
+  transform: rotate(15deg) scale(1.5);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.happy-hour {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)),
+    url(../img/hpppy-hour.jpg);
+  height: 230px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0 1px;
+}
+.happy-hour h1 {
+  font-family: 'Crafty Girls';
+  color: lightgray;
+  text-align: center;
+  font-size: 45px;
+  text-transform: capitalize;
+}
+
+/*====================================================
+                       TEAM MEMBERS
+======================================================*/
+.team-member {
+  margin: 0 15px;
+}
+.team-member img {
+  width: 400px;
+  max-height: 270px;
+}
+.team-member-info {
+  padding: 15px 0 30px 0;
+  text-align: center;
+}
+.team-member-info h4 {
+  font-size: 22px;
+}
+/*====================================================
+    
+======================================================*/
+.bg-inquiry {
+  background: linear-gradient(to right, #34c6d3, #fbb018);
+  padding: 25px;
+  margin: 0;
+}
+.bg-inquiry img {
+  border-radius: 2px;
+  border-top-right-radius: 50%;
+}
+#inquiry h2 {
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 30px 0;
+}
+#inquiry span {
+  padding: 0 10px 0 20px;
+}
+
+/*====================================================
+                       DIRECTIONS
+======================================================*/
+.google-map {
+  padding: 70px 0;
+  margin: 0;
+}
+
+.store-wrapper-header {
+  height: 80px;
+  padding: 10px;
+  background-color: lightgray;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.store-wrapper-header h3 {
+  font-family: 'Crafty Girls';
+  font-size: 180%;
+  text-transform: capitalize;
+}
+.bg-white {
+  background-color: white;
+  padding: 20px 0 20px 0;
+  margin: 0;
+}
+.img-store-wrapper {
+  max-width: 1700px;
+}
+.hover-store figure {
+  background: #f0f7da;
+  margin-top: 15px;
+}
+.hover-store figure img {
+  opacity: 1;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  margin: auto;
+  border-radius: 2px;
+}
+.hover-store figure:hover img {
+  opacity: 0.7;
+}
+/*====================================================
+                       FOOTER
+======================================================*/
+#footer {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 70px 0 20px 0;
+}
+.footer-navbar-brand {
+  padding-bottom: 40px;
+}
+
+.footer-navbar-brand img:hover {
+  opacity: 0.7;
+}
+
+.store-info {
+  padding: 50px 0 0 0;
+  color: white;
+}
+
+.store-info h4 {
+  font-size: 140%;
+  color: white;
+}
+
+#footer .container-fluid {
+  border-top: 4px solid #ff3333;
+}
+
+.copyright {
+  font-family: 'Crafty Girls';
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px 0 20px 70px;
+}
+.fa-map-marker,
+.fa-pagelines {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 150%;
+  border: 2px solid #fff;
+}
+
+.fa-map-marker:hover,
+.fa-pagelines:hover {
+  opacity: 0.7;
+}
+
+/*====================================================
+                       NAVIGATION
+======================================================*/
+.navbar {
+  padding: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  height: 85px;
+}
+.navbar-brand img {
+  display: inline-block;
+  margin-top: 2px;
+}
+.navbar-brand img:hover {
+  opacity: 0.8;
+}
+.cafe-slowly-top-nav {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0;
+}
+.cafe-slowly-nav-wrapper {
+  padding: 0 70px;
+}
+.navbar-nav {
+  float: right;
+  height: 100%;
+  margin-top: 16px;
+}
+.navbar-nav > li > a {
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  line-height: 35px;
+}
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  background: none;
+  color: #ff3333;
+}
+.navbar-toggle {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid #f7f7f7;
+  border-radius: 0;
+  margin: 20px 0 0 0;
+}
+.navbar-toggle .icon-bar {
+  background-color: #f7f7f7;
+}
+.navbar-collapse {
+  max-height: none !important;
+}
+.cafe-slowly-top-nav ul.navbar-nav > li.active > a {
+  color: #ff3333;
+}
