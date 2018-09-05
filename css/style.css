@@ -1,538 +1,746 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html,
 body {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: 'Roboto Condensed', sans-serif;
+  position: relative;
+  color: #212226;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
 }
 
 p {
-  color: #41464b;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+mark {
+  padding: 0 6px;
+}
+
+.text-turquoise {
+  color: #008080;
+}
+
+/* =========================================
+        SECTION HEADINGS
+============================================ */
+section {
+  padding: 80px 0;
+  margin: 0;
+}
+
+.section-heading h2 {
+  font-size: 40px;
+  font-weight: 200;
+  text-align: center;
+}
+.section-heading span {
+  font-weight: 400;
+}
+
+.section-heading-underline {
+  width: 50px;
+  height: 5px;
+  background-color: #3292a6;
+  margin: 40px auto 70px auto;
+}
+
+/* =========================================
+        NAVIGATION 
+============================================ */
+
+.navbar {
+  box-shadow: 1px 1px 2px #c0c0c0;
+  background: #fff;
+  height: 90px;
+}
+
+.navbar-brand {
+  color: #282828 !important;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.navbar .nav-item .nav-link {
+  font-family: 'Raleway', sans-serif;
   font-size: 17px;
-  font-weight: 300;
-}
-
-h3 {
-  color: #41464b;
+  color: #212226;
   text-transform: uppercase;
+  margin-left: 1.5rem;
 }
 
-.text-cafe-slowly {
-  font-family: 'Crafty Girls';
-  color: #ff3333;
-  text-transform: capitalize;
-}
-.fa-home {
-  font-size: 27px;
+.navbar .nav-item .nav-link:active,
+.navbar .nav-item .nav-link:focus {
+  font-weight: 700 !important;
 }
 
-/*====================================================
-                        HOME
-======================================================*/
+.red-link {
+  background: #ff3333;
+  color: white !important;
+  border-radius: 2px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.red-link:hover {
+  background: #db1f2a;
+}
 
+/* =========================================
+        HOME  
+============================================ */
 #home {
-  height: 100%;
+  border: 1px solid transparent;
+  padding: 0;
+  margin: 0;
+}
+#carousel-wrapper {
+  position: relative;
+  padding: 0;
+  margin: 90px 0 60px 0;
+  height: 88vh;
 }
 
-#home-cover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
-    url(../img/home.jpg);
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
+#home-carousel {
+  position: absolute;
+  width: 100%;
+  height: 88vh;
+  top: 0;
+  left: 0;
+}
+
+.owl-carousel .item {
+  width: 100%;
+  height: 88vh;
   background-position: center;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.owl-carousel .item-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url(../img/home/computer-desk-doctor.jpg);
+}
+.owl-carousel .item-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url(../img/home/apple-blank-business.jpg);
+}
+.owl-carousel .item-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url(../img/home/bloom-blooming-blossom.jpg);
 }
 
-#home-content-box {
+.owl-theme .owl-nav.disabled + .owl-dots {
+  background: #212226;
+  margin: 0;
+  padding: 20px;
+}
+.home-content-box {
+  position: relative;
   width: 100%;
   height: 100%;
   display: table;
+  z-index: 10;
+  text-align: center;
 }
-#home-content-box-inner {
+.home-content-box-inner {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
-#home-content-box-inner h1 {
-  font-size: 80px;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-#home-content-box-inner span {
-  color: #ff3333;
-}
-
-.home-banner {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  bottom: 0;
-  left: 0;
-  background-color: #ff3333;
-}
-
-.home-banner h2 {
-  position: relative;
-  font-family: 'Crafty Girls';
+.home-content-box-inner h1 {
   color: #fff;
-  font-size: 190%;
-  text-align: right;
-  margin: 0 70px 0 0;
-  padding: 17px;
+  font-size: 60px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+  display: inline-block;
+  word-spacing: 5px;
+  padding: 20px 10px;
+}
+.home-content-box-inner h2 {
+  font-family: 'Crafty Girls', sans-serif;
+  color: #fff;
+  word-spacing: 5px;
+}
+.btn-group-vertical {
+  display: block;
+  width: 420px;
+  margin: 80px auto 0 auto;
+  color: white;
+  text-align: center;
+}
+.btn-primary {
+  font-family: 'Raleway', sans-serif;
+  border-radius: 2px;
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+.text-healthy-living {
+  display: inline-block;
+  color: white;
+  padding-top: 20px;
+}
+.btn-info {
+  padding: 0;
+}
+.img-heart {
+  display: block;
+  float: left;
+  max-width: 70px;
+  margin-bottom: 5px;
+}
+/* =========================================
+        HEALTHY LIVING SUPPORT GROUP  
+============================================ */
+.modal-footer {
+  background: white;
+}
+#healthy-living .card-body {
+  color: white;
+}
+#healthy-living .list-group {
+  margin-top: 60px !important;
+}
+#healthy-living .list-group .active {
+  font-size: 20px;
+  font-weight: 400;
+}
+#healthy-living .list-group-item {
+  border-radius: 2px;
+  font-size: 17px;
+
+  text-align: center;
+}
+.invitations {
+  text-align: center;
+  padding: 20px 10px;
+}
+/* =========================================
+        ABOUT DR. ALLYN 
+============================================ */
+#about {
+  background: linear-gradient(white, #f7f7f7);
+}
+#about img:hover {
+  opacity: 0.7;
+}
+.img-dr-wrapper {
+  width: 290px;
+  border: 1px solid lightgray;
+  padding: 24px;
+}
+.img-bottle,
+.img-chives {
+  margin-top: 90px;
+  -webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+  transition: width 1s, height 1s, transform 1s;
+  border: 1px solid #f0f0f0;
+}
+.img-bottle:hover,
+.img-chives:hover {
+  -ms-transform: scale(1, 1.2);
+  -webkit-transform: scale(1, 1.2);
+  transform: scale(1, 1.2);
+}
+#about h3 {
+  padding: 0 0 15px 0;
+  font-size: 24px;
+  text-align: center;
 }
 
-/*====================================================
-                       ANIMATE
-======================================================*/
-#about-cafe-slowly .content-box-1,
-#about-cafe-slowly .content-box-3,
-#about-cafe-slowly .content-box-5 {
+/* =========================================
+        SERVICES  
+============================================ */
+#services {
+  background: linear-gradient(white, #f7f7f7);
+}
+/* BS Popover */
+.media-object {
+  max-width: 500px;
+  margin: auto;
+}
+
+.popover {
+  max-width: 530px;
+  width: auto;
+}
+#services h3 {
+  padding: 40px 0 10px 0;
+  font-size: 24px;
+}
+#accordion .card {
+  border-radius: 0 !important;
+}
+#accordion .card-header {
+  padding: 18px;
+}
+#accordion .card-body {
+  padding: 5px;
+}
+.fa-arrow-circle-down {
+  padding-right: 10px;
+  font-size: 110%;
+}
+#services-tabs ul {
+  margin-bottom: 80px;
+}
+/* Animate service box */
+#services .service-box-1,
+#services .service-box-2,
+#services .service-box-3,
+#services .service-box-4 {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
 }
-#about-cafe-slowly .content-box-1 {
+#services .service-box-1 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+#services .service-box-2 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+#services .service-box-3 {
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
-#about-cafe-slowly .content-box-3 {
-  -webkit-animation-delay: 0.7s;
-  animation-delay: 0.7s;
+#services .service-box-4 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
-#about-cafe-slowly .content-box-5 {
-  -webkit-animation-delay: 0.9s;
-  animation-delay: 0.9s;
+.service-box-1 img,
+.service-box-4 img {
+  height: 300px;
+  margin: 0 0 25px 0;
 }
-
-/*====================================================
-                       CONTENT (Generic)
-======================================================*/
-
-.content-box {
-  padding: 80px 0;
+.img-hover figure {
+  background: rgba(102, 178, 178, 0.6);
+  height: 300px;
 }
-.content-title h3 {
-  font-size: 30px;
+.img-hover figure img {
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.img-hover figure:hover img {
+  opacity: 0.5;
+}
+.service-box-2 {
+  padding: 30px;
+  background: #ededeb;
+  height: 300px;
+  margin-bottom: 25px;
+}
+.service-box-3 {
+  padding: 30px;
+  background: #ededeb;
+  height: 300px;
+  margin-bottom: 25px;
+}
+/* =========================================
+                NATUROPATHIC MEDICINE 
+============================================ */
+#naturopathic-medcine {
+  background: linear-gradient(white, #f7f7f7);
+}
+#naturopathic-medcine-tabs ul {
+  margin-bottom: 80px;
+}
+#naturopathic-medcine-tabs ul li a {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  color: #212226;
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 15px 20px;
+  text-decoration: none;
+  border: 1px solid #b2d8d8;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+#naturopathic-medcine-tabs ul li a:hover,
+#naturopathic-medcine-tabs ul li.r-tabs-state-active a:hover {
+  background: #b2d8d8;
+}
+/* Tab active state */
+#naturopathic-medcine-tabs ul li.r-tabs-state-active a,
+#naturopathic-medcine-tabs ul li.r-tabs-state-active a:hover {
+  background: #3292a6;
+  border: 1px solid #3292a6;
+  color: white;
+  font-weight: 500;
+}
+.naturopathic-medcine-tab img {
+  width: 100%;
+  margin: 0 auto;
+}
+.naturopathic-medcine-tab h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+mark {
+  background: yellow;
   font-weight: 600;
+}
+.tab-content {
+  padding: 0 20px;
+}
+.card .card-header:hover {
+  cursor: pointer;
+}
+/* =========================================
+                Testimonials
+============================================ */
+#testimonials {
+  background: linear-gradient(white, #f7f7f7);
+  height: auto;
+  padding-bottom: 100px;
+}
+#testimonial-slider {
+  background: #f4f4f4;
+  border: 1px solid lightgray;
+  border-top-right-radius: 40%;
+  padding: 40px 60px 40px 40px;
+}
+.testimonial h3 {
+  padding: 20px 0 20px 5px;
+}
+.testimonial span {
+  font-size: 17px;
+}
+.fa-comment {
+  color: #d6e185;
+  /* color: #b2d8d8; */
+  padding-right: 15px;
+}
+/* =========================================
+                JUMBOTRON
+============================================ */
+.jumbo-services h1,
+.jumbo-appointment h1 {
+  color: #282828;
   text-align: center;
-  margin: 0 0 30px 0;
+  font-weight: 400;
+  letter-spacing: 1px;
+  word-spacing: 5px;
 }
-.content-title-underline {
-  width: 50px;
-  height: 5px;
-  background-color: #ff3333;
-  margin: 0 auto 50px auto;
+.jumbo-services {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url(../img/appointment/abstract-267046_960_720.png);
+
+  /* Parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 0 60px 0;
+  margin: 0;
+  border-radius: 0;
+}
+.jumbo-testimonial {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/testimonial/adult-balloon-beautiful.jpg);
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0;
+  margin: 0;
+  border-radius: 0;
+}
+.jumbo-appointment {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url(../img/appointment/abstract-267046_960_720.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+  margin: 0;
+  border-radius: 0;
+}
+.jumbo-pyfv {
+  background: linear-gradient(#f4f4f4, white);
+  text-align: center;
+  padding: 50px 10px 0 10px;
+  margin: 90px 0 0 0;
+  border-radius: 0;
 }
 
-/* Magnify Image On Mouse Over */
-.img-wrapper {
+/* =========================================
+    MAKE AN APPOINTMENT  
+============================================ */
+/* Appointment Contact Info */
+#appointment .card {
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 40px 20px;
+  text-align: center;
+}
+#appointment .card.active {
+  background: linear-gradient(white, #b2d8d8);
+  padding: 40px 20px 30px 20px;
+}
+#appointment .card i {
+  font-size: 33px;
+  margin: 0;
+}
+#appointment .card hr {
+  width: 40px;
+  height: 2px;
+  background-color: #212226;
+  margin: 20px auto 30px auto;
+}
+/* Hover state */
+#appointment .card:hover {
+  background: linear-gradient(white, #b2d8d8);
+}
+#appointment .card p {
+  font-size: 18px;
+}
+#appointment .card:hover i {
+  transform: translateY(-20px);
+}
+/* Smooth transition */
+#appointment .card,
+#appointment .card i,
+#appointment .card hr {
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+#appointment .card h4,
+#appointment .card p {
+  -webkit-transition: all 500ms linear;
+  transition: all 500ms linear;
+}
+.credit-card-group {
+  display: inline-block;
+  margin: 10px 0 -26px 0;
+}
+.credit-card-group img {
+  width: 60px;
+  height: 60px;
+  margin-right: 2px;
+}
+.address {
+  font-size: 20px;
+  word-spacing: 3px;
+  font-weight: 300;
+  padding-top: 5px;
+}
+/* Prior to Your First Visit */
+.pyfv-heading {
+  font-family: 'Crafty Girls', sans-serif;
+  margin: 40px 0;
+}
+.fa-building {
+  color: #212226;
+  font-size: 33px;
+  padding-right: 10px;
+}
+.pyfv-content {
+  background: linear-gradient(white, #cee6e6);
+  padding: 30px 20px;
+  margin-bottom: 15px;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.pyfv-content:hover {
+  color: white;
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+.pyfv-content h5 {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Office Photos */
+#office-photos-wrapper {
+  margin-top: 60px;
+}
+.office-photo-item {
   overflow: hidden;
+  position: relative;
 }
-
-.img-wrapper img {
+/* Zoom Effect */
+.office-photo-item img {
+  width: 100%;
+  height: auto;
   -webkit-transition: -webkit-transform 0.5s ease;
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  margin-bottom: 10px;
 }
-
-.img-wrapper img:hover {
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
-  cursor: zoom-in;
+.office-photo-item:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
-
-/*====================================================
-                       TODAY'S SPECIALS
-======================================================*/
-#specials {
-  background: linear-gradient(#ffffff, #f7f7f7);
+/* Overlay Effect */
+.office-photo-item-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  cursor: -webkit-zoom-in;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
-
-.special-content-box {
+/* Item Details Effect */
+.office-photo-item-details {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
   text-align: center;
-  padding: 0 50px 0 50px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-
-.special-content-box h2 {
-  background: linear-gradient(to right, #ff3333, yellow);
-  color: white;
-  font-size: 180%;
-  padding: 15px;
-  margin: 0 0 40px 0;
+.office-photo-item-details h3 {
+  color: #f4c613;
+  font-size: 22px;
+  padding-bottom: 10px;
+  -webkit-transform: translateY(-20%);
+  transform: translateY(-20%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* Show Overlay on mouse over */
+.office-photo-item:hover .office-photo-item-details h3 {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.office-photo-item:hover .office-photo-item-overlay {
+  opacity: 1;
+}
+/* GOOGLE MAP */
+.jumbo-map {
+  background-image: linear-gradient(#f7f7f7, white);
+  padding: 80px 0;
+}
+.google-map {
+  height: 380px;
+  width: 95%;
+  border: 1px solid lightgray;
+}
+/* =========================================
+    KNOWLEDGE IS POWER    
+============================================ */
+#knowledge-is-power {
+  padding: 30px 0 80px 0;
+}
+.jumbo-knowledge {
+  background: #212226;
+  padding: 40px 0 30px 0;
+  margin-top: 20px;
+  border-radius: 0;
+}
+.jumbo-knowledge h1 {
+  font-size: 30px;
+  color: #f4c613;
+  font-weight: 400;
+  word-spacing: 5px;
+  text-transform: uppercase;
+}
+.jumbo-knowledge h3 {
+  font-weight: 300;
+}
+.breadcrumb {
+  background: white;
+  padding: 30px 15px;
+  font-size: 20px;
+}
+.helpful-books .nav {
+  margin: 30px 0 10px 50px;
+}
+.helpful-books .nav-item {
+  font-size: 120%;
+  margin-right: 1px;
+  border: 1px solid lightgray;
   border-radius: 2px;
 }
-.special-content-box h4 {
+.helpful-books .card-header,
+.helpful-links .card-header {
+  background: #3292a6;
+  color: white;
+  text-transform: uppercase;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.helpful-books .card-link,
+.helpful-links .card-link {
+  color: white;
   font-size: 150%;
 }
-.special-price {
-  font-size: 150%;
-  color: #ff3333;
-  font-weight: 600;
-  padding: 10px 0 0 0;
+.helpful-books .card-header:hover,
+.helpful-links .card-header:hover {
+  background: #2a7788;
 }
-.img-special {
-  margin-top: 20px;
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  border: 1px solid #3292a6;
+  border-radius: 3px !important;
 }
-.party-animal {
-  margin: auto;
-}
-
-/*====================================================
-                ABOUT CAFE SLOWLY
-======================================================*/
-#about-cafe-slowly {
-  background: linear-gradient(#fff, #f7f7f7);
-  padding: 80px 20px;
-}
-#about-cafe-slowly .container {
-  padding-top: 20px;
-}
-
-#about-cafe-slowly .row {
-  padding: 0;
-  margin: 0;
-}
-
-#about-cafe-slowly figure {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70px;
-  height: 70px;
-}
-
-#about-cafe-slowly img {
-  opacity: 1;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  width: 100%;
-  height: 100%;
-}
-
-#about-cafe-slowly img:hover {
-  opacity: 0.7;
-}
-
-.content-box-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url(../img/cafe-slowly/bg-about.jpg);
-  font-family: 'Crafty Girls';
-  height: 520px;
-  margin: 0 0 21px 0;
-  padding: 50px;
-  border: 1px solid lightgray;
-}
-.content-box-2 {
-  height: 250px;
-  margin: 0 0 21px -10px;
-  border: 1px solid lightgray;
-}
-.content-box-3 {
-  height: 250px;
-  margin: 0 0 21px -10px;
-}
-.content-box-4 {
-  height: 250px;
-  margin: 0 0 21px 0;
-}
-.content-box-5 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url(../img/cafe-slowly/bg-about.jpg);
-
-  height: 250px;
-  margin: 0 0 21px -10px;
-  padding: 40px;
-  text-align: center;
-  border: 1px solid lightgray;
-}
-
-#about-cafe-slowly table {
-  text-align: left;
-}
-
-.chef {
-  width: 102px;
-  height: 160px;
-  margin: auto;
-}
-.content-box-1 h3 {
-  text-align: center;
-  text-transform: capitalize;
-  font-size: 190%;
-  font-weight: 600;
-  padding-bottom: 20px;
-}
-.content-box-1 p::first-letter,
-.content-box-1 h4::first-letter {
-  font-size: 150%;
-}
-
-.bg-lightgray {
-  background-color: #f5f5f5;
-}
-
-/*====================================================
-                       MAIN MENU
-======================================================*/
-#main-menu {
-  background: linear-gradient(#ffffff, #f7f7f7);
-}
-#main-menu table {
+.helpful-books .tab-pane {
   margin-top: 40px;
 }
-#main-menu th {
-  background-color: #ff3333;
+.helpful-books h4 {
+  font-size: 21px;
+  font-weight: 500;
 }
-#main-menu th,
-td {
-  padding: 16px !important;
-  font-size: 130%;
+/* HELPFUL LINKS */
+.helpful-links .list-group {
+  margin-top: 40px;
 }
-#main-menu table h3 {
-  color: white;
-  text-align: center;
-  margin: 0;
+.helpful-links .list-group-item {
+  font-size: 21px;
+  border: 0;
 }
-
-.toast-wrapper figure img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  -webkit-transform: rotate(15deg) scale(1.2);
-  transform: rotate(15deg) scale(1.2);
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-.toast-wrapper figure:hover img {
-  -webkit-transform: rotate(0) scale(1.4);
-  transform: rotate(0) scale(1.4);
-}
-
-.dessert-wrapper figure img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  -webkit-transform: rotate(0) scale(1);
-  transform: rotate(0) scale(1);
-}
-
-.dessert-wrapper figure:hover img {
-  -webkit-transform: rotate(15deg) scale(1.5);
-  transform: rotate(15deg) scale(1.5);
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-.happy-hour {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1)),
-    url(../img/hpppy-hour.jpg);
-  height: 230px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  margin: 0 1px;
-}
-.happy-hour h1 {
-  font-family: 'Crafty Girls';
-  color: lightgray;
-  text-align: center;
-  font-size: 45px;
-  text-transform: capitalize;
-}
-
-/*====================================================
-                       TEAM MEMBERS
-======================================================*/
-.team-member {
-  margin: 0 15px;
-}
-.team-member img {
-  width: 400px;
-  max-height: 270px;
-}
-.team-member-info {
-  padding: 15px 0 30px 0;
-  text-align: center;
-}
-.team-member-info h4 {
-  font-size: 22px;
-}
-/*====================================================
-    
-======================================================*/
-.bg-inquiry {
-  background: linear-gradient(to right, #34c6d3, #fbb018);
-  padding: 25px;
-  margin: 0;
-}
-.bg-inquiry img {
-  border-radius: 2px;
-  border-top-right-radius: 50%;
-}
-#inquiry h2 {
-  color: #fff;
-  font-size: 30px;
-  text-transform: uppercase;
-  padding: 30px 0;
-}
-#inquiry span {
-  padding: 0 10px 0 20px;
-}
-
-/*====================================================
-                       DIRECTIONS
-======================================================*/
-.google-map {
-  padding: 70px 0;
-  margin: 0;
-}
-
-.store-wrapper-header {
-  height: 80px;
-  padding: 10px;
-  background-color: lightgray;
-  margin-bottom: 50px;
-  text-align: center;
-}
-.store-wrapper-header h3 {
-  font-family: 'Crafty Girls';
-  font-size: 180%;
-  text-transform: capitalize;
-}
-.bg-white {
-  background-color: white;
-  padding: 20px 0 20px 0;
-  margin: 0;
-}
-.img-store-wrapper {
-  max-width: 1700px;
-}
-.hover-store figure {
-  background: #f0f7da;
-  margin-top: 15px;
-}
-.hover-store figure img {
-  opacity: 1;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  margin: auto;
-  border-radius: 2px;
-}
-.hover-store figure:hover img {
-  opacity: 0.7;
-}
-/*====================================================
-                       FOOTER
-======================================================*/
-#footer {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 70px 0 20px 0;
-}
-.footer-navbar-brand {
-  padding-bottom: 40px;
-}
-
-.footer-navbar-brand img:hover {
-  opacity: 0.7;
-}
-
-.store-info {
-  padding: 50px 0 0 0;
-  color: white;
-}
-
-.store-info h4 {
-  font-size: 140%;
-  color: white;
-}
-
-#footer .container-fluid {
-  border-top: 4px solid #ff3333;
-}
-
-.copyright {
-  font-family: 'Crafty Girls';
-  font-size: 15px;
-  color: white;
-  text-transform: uppercase;
-  padding: 20px 0 20px 70px;
-}
-.fa-map-marker,
-.fa-pagelines {
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  border-radius: 50%;
-  margin-right: 10px;
-  font-size: 150%;
-  border: 2px solid #fff;
-}
-
-.fa-map-marker:hover,
-.fa-pagelines:hover {
-  opacity: 0.7;
-}
-
-/*====================================================
-                       NAVIGATION
-======================================================*/
-.navbar {
-  padding: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  height: 85px;
-}
-.navbar-brand img {
-  display: inline-block;
-  margin-top: 2px;
-}
-.navbar-brand img:hover {
-  opacity: 0.8;
-}
-.cafe-slowly-top-nav {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 0;
-}
-.cafe-slowly-nav-wrapper {
-  padding: 0 70px;
-}
-.navbar-nav {
-  float: right;
-  height: 100%;
-  margin-top: 16px;
-}
-.navbar-nav > li > a {
-  color: #fff;
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
-  line-height: 35px;
-}
-.navbar-nav > li > a:hover,
-.navbar-nav > li > a:focus {
-  background: none;
-  color: #ff3333;
-}
-.navbar-toggle {
-  background-color: rgba(0, 0, 0, 0.1);
-  border: 1px solid #f7f7f7;
+.helpful-links .list-group .active {
+  background-image: linear-gradient(to right, lightgray, white);
+  color: #212226;
+  font-size: 21px;
+  font-weight: 500;
   border-radius: 0;
-  margin: 20px 0 0 0;
 }
-.navbar-toggle .icon-bar {
-  background-color: #f7f7f7;
+/* =========================================
+    FOOTER   
+============================================ */
+footer {
+  background: #212226;
+  color: #e8e8e8;
+  word-spacing: 5px;
+  padding: 50px 0 30px 0;
+  font-weight: 300;
+  text-align: center;
 }
-.navbar-collapse {
-  max-height: none !important;
-}
-.cafe-slowly-top-nav ul.navbar-nav > li.active > a {
-  color: #ff3333;
+footer h4 {
+  padding-bottom: 10px;
 }
