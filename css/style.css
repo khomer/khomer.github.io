@@ -126,7 +126,7 @@ section {
   left: 0;
 }
 
-.owl-carousel .item {
+#carousel-wrapper .owl-carousel .item {
   width: 100%;
   height: 88vh;
   background-position: center;
@@ -134,20 +134,20 @@ section {
   -webkit-background-size: cover;
   background-size: cover;
 }
-.owl-carousel .item-1 {
+#carousel-wrapper .owl-carousel .item-1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
     url(../img/home/computer-desk-doctor.jpg);
 }
-.owl-carousel .item-2 {
+#carousel-wrapper .owl-carousel .item-2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
     url(../img/home/apple-blank-business.jpg);
 }
-.owl-carousel .item-3 {
+#carousel-wrapper .owl-carousel .item-3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
     url(../img/home/bloom-blooming-blossom.jpg);
 }
 
-.owl-theme .owl-nav.disabled + .owl-dots {
+#carousel-wrapper .owl-theme .owl-nav.disabled + .owl-dots {
   background: #212226;
   margin: 0;
   padding: 20px;
@@ -291,15 +291,11 @@ section {
 #accordion .card {
   border-radius: 0 !important;
 }
-#accordion .card-header {
-  padding: 18px;
-}
-#accordion .card-body {
-  padding: 5px;
+.card-link {
+  font-size: 130%;
 }
 .fa-arrow-circle-down {
   padding-right: 10px;
-  font-size: 110%;
 }
 #services-tabs ul {
   margin-bottom: 80px;
