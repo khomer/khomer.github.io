@@ -13,7 +13,7 @@ body {
 
 body {
   position: relative;
-  color: #212226;
+  color: #303030;
   overflow-x: hidden;
 }
 
@@ -23,6 +23,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: #212226;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -35,8 +36,10 @@ mark {
   padding: 0 6px;
 }
 
-.text-turquoise {
-  color: #008080;
+.text-turquoise,
+a:link,
+a:hover {
+  color: #148496;
 }
 
 /* =========================================
@@ -59,8 +62,8 @@ section {
 .section-heading-underline {
   width: 50px;
   height: 5px;
-  background-color: #3292a6;
-  margin: 40px auto 70px auto;
+  background-color: #17a2b8;
+  margin: 30px auto 60px auto;
 }
 
 /* =========================================
@@ -150,7 +153,7 @@ section {
 #carousel-wrapper .owl-theme .owl-nav.disabled + .owl-dots {
   background: #212226;
   margin: 0;
-  padding: 20px;
+  padding: 1.25rem;
 }
 .home-content-box {
   position: relative;
@@ -179,30 +182,32 @@ section {
   font-family: 'Crafty Girls', sans-serif;
   color: #fff;
   word-spacing: 5px;
+  padding: 10px;
 }
 .btn-group-vertical {
   display: block;
   width: 420px;
-  margin: 80px auto 0 auto;
+  margin: 80px auto;
   color: white;
   text-align: center;
 }
-.btn-primary {
+.btn-info {
   font-family: 'Raleway', sans-serif;
   border-radius: 2px;
-  padding: 15px;
+  padding: 14px !important;
   text-transform: uppercase;
   font-size: 17px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+}
+.btn-outline-info {
+  padding: 0 5px;
 }
 .text-healthy-living {
   display: inline-block;
   color: white;
   padding-top: 20px;
 }
-.btn-info {
-  padding: 0;
-}
+
 .img-heart {
   display: block;
   float: left;
@@ -212,23 +217,21 @@ section {
 /* =========================================
         HEALTHY LIVING SUPPORT GROUP  
 ============================================ */
-.modal-footer {
-  background: white;
-}
-#healthy-living .card-body {
+.modal-body .card {
   color: white;
+  border-radius: 2px;
 }
 #healthy-living .list-group {
   margin-top: 60px !important;
 }
 #healthy-living .list-group .active {
-  font-size: 20px;
+  background-color: #3292a6;
+  font-size: 18px;
   font-weight: 400;
 }
 #healthy-living .list-group-item {
   border-radius: 2px;
   font-size: 17px;
-
   text-align: center;
 }
 .invitations {
@@ -292,6 +295,7 @@ section {
   border-radius: 0 !important;
 }
 .card-link {
+  color: #3292a6;
   font-size: 130%;
 }
 .fa-arrow-circle-down {
@@ -367,8 +371,7 @@ section {
   font-family: 'Raleway', sans-serif;
   color: #212226;
   text-transform: uppercase;
-  font-size: 17px;
-  padding: 15px 20px;
+  padding: 14px 20px;
   text-decoration: none;
   border: 1px solid #b2d8d8;
   -webkit-transition: all 400ms ease-in-out;
@@ -381,15 +384,12 @@ section {
 /* Tab active state */
 #naturopathic-medcine-tabs ul li.r-tabs-state-active a,
 #naturopathic-medcine-tabs ul li.r-tabs-state-active a:hover {
-  background: #3292a6;
-  border: 1px solid #3292a6;
+  background: #17a2b8;
+  border: 1px solid #17a2b8;
   color: white;
   font-weight: 500;
 }
-.naturopathic-medcine-tab img {
-  width: 100%;
-  margin: 0 auto;
-}
+
 .naturopathic-medcine-tab h3 {
   font-size: 24px;
   margin-bottom: 20px;
@@ -425,8 +425,7 @@ mark {
   font-size: 17px;
 }
 .fa-comment {
-  color: #d6e185;
-  /* color: #b2d8d8; */
+  color: #b2d8d8;
   padding-right: 15px;
 }
 /* =========================================
@@ -467,6 +466,7 @@ mark {
 .jumbo-appointment {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
     url(../img/appointment/abstract-267046_960_720.png);
+
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -479,27 +479,34 @@ mark {
   background: linear-gradient(#f4f4f4, white);
   text-align: center;
   padding: 50px 10px 0 10px;
-  margin: 90px 0 0 0;
+  margin: 80px 0 0 0;
   border-radius: 0;
 }
 
 /* =========================================
     MAKE AN APPOINTMENT  
 ============================================ */
+
 /* Appointment Contact Info */
 #appointment .card {
   background-color: #fff;
   border-radius: 2px;
   padding: 40px 20px;
   text-align: center;
+  margin-bottom: 10px;
 }
 #appointment .card.active {
-  background: linear-gradient(white, #b2d8d8);
+  background: #a3dae3;
   padding: 40px 20px 30px 20px;
 }
+#appointment .fa-home {
+  color: #282828;
+  font-size: 30px;
+  padding-right: 10px;
+}
 #appointment .card i {
-  font-size: 33px;
-  margin: 0;
+  color: #282828;
+  font-size: 30px;
 }
 #appointment .card hr {
   width: 40px;
@@ -509,10 +516,11 @@ mark {
 }
 /* Hover state */
 #appointment .card:hover {
-  background: linear-gradient(white, #b2d8d8);
+  background: linear-gradient(white, #a3dae3);
 }
+
 #appointment .card p {
-  font-size: 18px;
+  font-size: 17px;
 }
 #appointment .card:hover i {
   transform: translateY(-20px);
@@ -520,23 +528,15 @@ mark {
 /* Smooth transition */
 #appointment .card,
 #appointment .card i,
-#appointment .card hr {
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
-}
+#appointment .card hr,
 #appointment .card h4,
 #appointment .card p {
-  -webkit-transition: all 500ms linear;
-  transition: all 500ms linear;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 .credit-card-group {
   display: inline-block;
   margin: 10px 0 -26px 0;
-}
-.credit-card-group img {
-  width: 60px;
-  height: 60px;
-  margin-right: 2px;
 }
 .address {
   font-size: 20px;
@@ -547,25 +547,17 @@ mark {
 /* Prior to Your First Visit */
 .pyfv-heading {
   font-family: 'Crafty Girls', sans-serif;
-  margin: 40px 0;
+  margin: 30px 0;
 }
-.fa-building {
-  color: #212226;
-  font-size: 33px;
-  padding-right: 10px;
-}
+
 .pyfv-content {
-  background: linear-gradient(white, #cee6e6);
+  background-image: linear-gradient(to bottom right, #ffddeb, #c2e8f3);
   padding: 30px 20px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   border: 1px solid lightgray;
   border-radius: 2px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-.pyfv-content:hover {
-  color: white;
-  background: rgba(0, 0, 0, 0.9) !important;
 }
 .pyfv-content h5 {
   text-transform: capitalize;
@@ -581,20 +573,7 @@ mark {
   overflow: hidden;
   position: relative;
 }
-/* Zoom Effect */
-.office-photo-item img {
-  width: 100%;
-  height: auto;
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  margin-bottom: 10px;
-}
-.office-photo-item:hover img {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
+
 /* Overlay Effect */
 .office-photo-item-overlay {
   position: absolute;
@@ -620,8 +599,9 @@ mark {
   transform: translateY(-50%);
 }
 .office-photo-item-details h3 {
-  color: #f4c613;
-  font-size: 22px;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
   padding-bottom: 10px;
   -webkit-transform: translateY(-20%);
   transform: translateY(-20%);
@@ -636,6 +616,7 @@ mark {
 .office-photo-item:hover .office-photo-item-overlay {
   opacity: 1;
 }
+
 /* GOOGLE MAP */
 .jumbo-map {
   background-image: linear-gradient(#f7f7f7, white);
@@ -659,7 +640,7 @@ mark {
   border-radius: 0;
 }
 .jumbo-knowledge h1 {
-  font-size: 30px;
+  font-size: 33px;
   color: #f4c613;
   font-weight: 400;
   word-spacing: 5px;
@@ -673,6 +654,9 @@ mark {
   padding: 30px 15px;
   font-size: 20px;
 }
+.breadcrumb-item {
+  color: #3292a6;
+}
 .helpful-books .nav {
   margin: 30px 0 10px 50px;
 }
@@ -684,7 +668,7 @@ mark {
 }
 .helpful-books .card-header,
 .helpful-links .card-header {
-  background: #3292a6;
+  background: #17a2b8;
   color: white;
   text-transform: uppercase;
   -webkit-transition: 0.5s ease-in-out;
@@ -697,12 +681,12 @@ mark {
 }
 .helpful-books .card-header:hover,
 .helpful-links .card-header:hover {
-  background: #2a7788;
+  background: #3292a6;
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  border: 1px solid #3292a6;
-  border-radius: 3px !important;
+  border: 1px solid #17a2b8;
+  background: #17a2b8;
 }
 .helpful-books .tab-pane {
   margin-top: 40px;
@@ -736,7 +720,4 @@ footer {
   padding: 50px 0 30px 0;
   font-weight: 300;
   text-align: center;
-}
-footer h4 {
-  padding-bottom: 10px;
 }

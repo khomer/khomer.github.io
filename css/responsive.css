@@ -11,6 +11,9 @@
 
 /* Small Devices (Portrait Tablets & Small Desktops) */
 @media (min-width: 768px) and (max-width: 991px) {
+  /* .navbar {
+    height: auto;
+  } */
   .navbar .nav-item .nav-link {
     margin-left: auto;
   }
@@ -44,9 +47,12 @@
   .navbar {
     height: auto;
   }
+  .section-heading h2 {
+    font-size: 500;
+    font-size: 35px;
+  }
 
   /* Home */
-
   #carousel-wrapper {
     margin: auto 0 40px 0;
   }
@@ -65,32 +71,73 @@
     display: none !important;
   }
 
-  /* Services */
-  .service-box-1 img {
-    margin-bottom: 15px;
+  /* Jumbotron */
+  .jumbo-services,
+  .jumbo-appointment {
+    padding: 40px 10px;
   }
+  .jumbo-testimonial {
+    padding: 140px;
+  }
+
+  .jumbo-services h1,
+  .jumbo-appointment h1 {
+    font-size: 30px;
+  }
+
+  /* Services */
   .service-box-2,
   .service-box-3 {
     height: auto;
     padding: 30px 20px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+  }
+  #services .img-B12 {
+    max-height: 200px;
+  }
+
+  /* Naturopathic Medcine */
+  .tab-content h3 {
+    text-align: center;
+  }
+  .service-tab .row,
+  .service-tab .col,
+  .tab-content {
+    padding: 0;
+  }
+  #naturopathic-medcine img {
+    display: none;
   }
 
   #naturopathic-medcine a {
     display: block;
     font-size: 120%;
-    padding: 15px;
-    border-top: 1px solid lightgray;
+    padding: 10px;
     border-bottom: 1px solid lightgray;
   }
 
-  #appointment .card {
-    width: 100%;
-    margin-bottom: 15px;
+  /* Appointment */
+  #appointment .fa-home,
+  #appointment .card i {
+    font-size: 25px;
+  }
+  #appointment h3,
+  .pyfv-heading {
+    font-size: 25px;
+    text-align: center;
+  }
+  #appointment .card h4 {
+    font-size: 23px;
   }
 
-  .tab-content h3 {
-    padding-top: 20px;
+  .address {
+    font-size: 18px;
+    text-align: center;
+  }
+  .google-map {
+    min-height: 250px;
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   /* KNOWLEDGE IS POWER */
@@ -107,18 +154,24 @@
 @media (max-width: 480px) {
   /* Home */
   .home-content-box-inner h1 {
-    font-size: 40px;
+    padding-top: 100px;
+    font-size: 35px;
+  }
+  .btn-info {
+    padding: 10px;
   }
   .btn-group-vertical {
-    width: auto;
+    margin: 40px auto;
   }
-  .btn-primary {
-    padding: 15px 10px;
+  .text-healthy-living {
+    padding: 0;
   }
+
   .img-heart {
-    float: none !important;
-    max-width: 60px;
-    margin: auto;
+    display: none !important;
+  }
+  .img-owl {
+    max-width: 200px;
   }
 
   /* About Dr. Allyn */
@@ -131,28 +184,7 @@
   }
   .img-chives {
     width: auto;
-    margin: 0 0 50px 0;
-  }
-
-  /* Jumbotron */
-  .jumbo-services,
-  .jumbo-appointment {
-    padding: 40px 10px;
-  }
-  .jumbo-testimonial {
-    padding: 150px;
-  }
-
-  .jumbo-services h1,
-  .jumbo-appointment h1 {
-    font-size: 30px;
-  }
-
-  /* Naturopathic Medcine */
-  .service-tab .row,
-  .service-tab .col,
-  .tab-content {
-    padding: 0;
+    margin: -100px 0 40px 0;
   }
 
   /* TESTIMONIAL */
