@@ -684,7 +684,6 @@ mark {
 .helpful-books .card-header,
 .helpful-links .card-header {
   background: #17a2b8;
-  color: white;
   text-transform: uppercase;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
@@ -692,7 +691,7 @@ mark {
 .helpful-books .card-link,
 .helpful-links .card-link {
   color: white;
-  font-size: 150%;
+  font-size: 23px;
 }
 .helpful-books .card-header:hover,
 .helpful-links .card-header:hover {
@@ -712,16 +711,16 @@ mark {
 }
 /* HELPFUL LINKS */
 .helpful-links .list-group {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .helpful-links .list-group-item {
-  font-size: 21px;
+  font-size: 20px;
   border: 0;
 }
 .helpful-links .list-group .active {
   background-image: linear-gradient(to right, lightgray, white);
   color: #212226;
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 500;
   border-radius: 0;
 }
