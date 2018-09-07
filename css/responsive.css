@@ -11,9 +11,17 @@
 
 /* Small Devices (Portrait Tablets & Small Desktops) */
 @media (min-width: 768px) and (max-width: 991px) {
-  /* .navbar {
+  .navbar {
     height: auto;
-  } */
+  }
+  .navbar {
+    margin: auto;
+  }
+  .navbar-brand,
+  .navbar .nav-item .nav-link {
+    margin: 0;
+    padding-left: 7px;
+  }
   .navbar .nav-item .nav-link {
     margin-left: auto;
   }
@@ -46,9 +54,20 @@
 @media (max-width: 767px) {
   .navbar {
     height: auto;
+    padding: 0;
+  }
+  .navbar-brand {
+    font-size: 27px;
+    margin: 0;
+  }
+  .navbar-brand img {
+    width: 30px;
+  }
+  .navbar .nav-item .nav-link {
+    margin: 0;
+    padding: 10px;
   }
   .section-heading h2 {
-    font-size: 500;
     font-size: 35px;
   }
 
@@ -60,10 +79,13 @@
     font-size: 45px;
   }
   .home-content-box-inner h2 {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   /* About Dr. Allyn */
+  .about-content-middle {
+    margin: -50px 20px 40px 20px;
+  }
   .about-content {
     padding: 20px;
   }
@@ -119,15 +141,15 @@
   /* Appointment */
   #appointment .fa-home,
   #appointment .card i {
-    font-size: 25px;
+    font-size: 24px;
   }
   #appointment h3,
   .pyfv-heading {
-    font-size: 25px;
+    font-size: 24px;
     text-align: center;
   }
   #appointment .card h4 {
-    font-size: 23px;
+    font-size: 22px;
   }
 
   .address {
@@ -158,10 +180,11 @@
     font-size: 35px;
   }
   .btn-info {
-    padding: 10px;
+    padding: 5px;
   }
   .btn-group-vertical {
-    margin: 40px auto;
+    max-width: 320px;
+    margin: 30px auto;
   }
   .text-healthy-living {
     padding: 0;
@@ -191,10 +214,6 @@
   #testimonial-slider {
     padding: 20px;
     border-radius: 0;
-  }
-
-  .office-photo-item-details h3 {
-    font-size: 22px;
   }
 
   /* KNOWLEDGE IS POWER */

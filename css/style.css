@@ -36,9 +36,14 @@ mark {
   padding: 0 6px;
 }
 
-.text-turquoise,
 a:link,
-a:hover {
+a:visited,
+a:hover,
+a:active {
+  color: #148496;
+}
+
+.text-turquoise {
   color: #148496;
 }
 
@@ -92,18 +97,19 @@ section {
 
 .navbar .nav-item .nav-link:active,
 .navbar .nav-item .nav-link:focus {
-  font-weight: 700 !important;
+  font-weight: 600 !important;
 }
 
 .red-link {
-  background: #ff3333;
+  background: #ce1d53;
+  border: 1px solid #ce1d53;
   color: white !important;
   border-radius: 2px;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 .red-link:hover {
-  background: #db1f2a;
+  opacity: 0.8;
 }
 
 /* =========================================
@@ -138,7 +144,7 @@ section {
   background-size: cover;
 }
 #carousel-wrapper .owl-carousel .item-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
     url(../img/home/computer-desk-doctor.jpg);
 }
 #carousel-wrapper .owl-carousel .item-2 {
@@ -173,7 +179,6 @@ section {
   font-size: 60px;
   font-weight: 400;
   text-transform: uppercase;
-  margin: 0;
   display: inline-block;
   word-spacing: 5px;
   padding: 20px 10px;
@@ -217,8 +222,7 @@ section {
 /* =========================================
         HEALTHY LIVING SUPPORT GROUP  
 ============================================ */
-.modal-body .card {
-  color: white;
+#healthy-living .card {
   border-radius: 2px;
 }
 #healthy-living .list-group {
@@ -270,6 +274,9 @@ section {
   font-size: 24px;
   text-align: center;
 }
+.about-content-middle {
+  margin: 40px;
+}
 
 /* =========================================
         SERVICES  
@@ -279,12 +286,12 @@ section {
 }
 /* BS Popover */
 .media-object {
-  max-width: 500px;
+  max-width: 470px;
   margin: auto;
 }
 
 .popover {
-  max-width: 530px;
+  max-width: 500px;
   width: auto;
 }
 #services h3 {
@@ -385,7 +392,6 @@ section {
 #naturopathic-medcine-tabs ul li.r-tabs-state-active a,
 #naturopathic-medcine-tabs ul li.r-tabs-state-active a:hover {
   background: #17a2b8;
-  border: 1px solid #17a2b8;
   color: white;
   font-weight: 500;
 }
@@ -431,14 +437,21 @@ mark {
 /* =========================================
                 JUMBOTRON
 ============================================ */
-.jumbo-services h1,
-.jumbo-appointment h1 {
-  color: #282828;
+.jumbotron h1 {
   text-align: center;
   font-weight: 400;
   letter-spacing: 1px;
   word-spacing: 5px;
 }
+.jumbo-services h1 {
+  color: #282828;
+}
+
+.jumbo-appointment h1 {
+  color: #ce1d53;
+  text-transform: uppercase;
+}
+
 .jumbo-services {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
     url(../img/appointment/abstract-267046_960_720.png);
@@ -471,7 +484,7 @@ mark {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 50px 0;
+  padding: 50px 0 40px 0;
   margin: 0;
   border-radius: 0;
 }
@@ -548,11 +561,13 @@ mark {
 .pyfv-heading {
   font-family: 'Crafty Girls', sans-serif;
   margin: 30px 0;
+  padding: 10px;
+  text-align: center;
 }
 
 .pyfv-content {
   background-image: linear-gradient(to bottom right, #ffddeb, #c2e8f3);
-  padding: 30px 20px;
+  padding: 30px 20px 10px 20px;
   margin-bottom: 10px;
   border: 1px solid lightgray;
   border-radius: 2px;
@@ -567,7 +582,7 @@ mark {
 
 /* Office Photos */
 #office-photos-wrapper {
-  margin-top: 60px;
+  margin-top: 80px;
 }
 .office-photo-item {
   overflow: hidden;
