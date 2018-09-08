@@ -1,5 +1,5 @@
 /*==================================================
-			Bootstrap 3 Media Queries
+			Bootstrap 4 Media Queries
 ==================================================*/
 
 /* Large Devices (Desktops & Laptops) */
@@ -181,7 +181,7 @@
     font-size: 35px;
   }
   .btn-info {
-    padding: 5px;
+    padding: 0;
   }
   .btn-group-vertical {
     max-width: 320px;

@@ -87,7 +87,7 @@ section {
 }
 
 .navbar-brand {
-  color: #282828 !important;
+  color: #303030 !important;
   font-size: 30px;
   font-weight: 500;
 }
@@ -100,11 +100,6 @@ section {
   margin-left: 1.5rem;
 }
 
-.navbar .nav-item .nav-link:active,
-.navbar .nav-item .nav-link:focus {
-  font-weight: 600 !important;
-}
-
 .navbar-toggler-icon {
   margin: 5px;
 }
@@ -112,14 +107,13 @@ section {
 .red-link {
   background: #e2366a;
   border: 1px solid #e2366a;
-
   color: white !important;
   border-radius: 2px;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 .red-link:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 /* =========================================
@@ -155,7 +149,7 @@ section {
   background-size: cover;
 }
 #carousel-wrapper .owl-carousel .item-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
     url(../img/home/computer-desk-doctor.jpg);
 }
 #carousel-wrapper .owl-carousel .item-2 {

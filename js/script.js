@@ -63,7 +63,7 @@ $(function() {
     autoHeight: true,
     items: 1,
     autoplay: true,
-    smartSpeed: 500,
+    smartSpeed: 700,
     loop: true,
     autoplayHoverPause: false,
     nav: false,
