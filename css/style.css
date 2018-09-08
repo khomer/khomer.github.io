@@ -13,7 +13,7 @@ body {
 
 body {
   position: relative;
-  color: #303030;
+  color: #505050;
   overflow-x: hidden;
 }
 
@@ -45,6 +45,11 @@ a:active {
 
 .text-turquoise {
   color: #148496;
+}
+.text-pink {
+  /* color: #ce1d53; */
+  /* color: #e2366a; */
+  color: #e64d7a;
 }
 
 /* =========================================
@@ -100,9 +105,14 @@ section {
   font-weight: 600 !important;
 }
 
+.navbar-toggler-icon {
+  margin: 5px;
+}
+
 .red-link {
-  background: #ce1d53;
-  border: 1px solid #ce1d53;
+  background: #e2366a;
+  border: 1px solid #e2366a;
+
   color: white !important;
   border-radius: 2px;
   -webkit-transition: 0.5s ease-in-out;
@@ -124,6 +134,7 @@ section {
   position: relative;
   padding: 0;
   margin: 90px 0 60px 0;
+  width: 100%;
   height: 88vh;
 }
 
@@ -144,15 +155,15 @@ section {
   background-size: cover;
 }
 #carousel-wrapper .owl-carousel .item-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../img/home/computer-desk-doctor.jpg);
 }
 #carousel-wrapper .owl-carousel .item-2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
     url(../img/home/apple-blank-business.jpg);
 }
 #carousel-wrapper .owl-carousel .item-3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
     url(../img/home/bloom-blooming-blossom.jpg);
 }
 
@@ -162,7 +173,6 @@ section {
   padding: 1.25rem;
 }
 .home-content-box {
-  position: relative;
   width: 100%;
   height: 100%;
   display: table;
@@ -191,7 +201,7 @@ section {
 }
 .btn-group-vertical {
   display: block;
-  width: 420px;
+  width: 350px;
   margin: 80px auto;
   color: white;
   text-align: center;
@@ -199,26 +209,16 @@ section {
 .btn-info {
   font-family: 'Raleway', sans-serif;
   border-radius: 2px;
+  border: 0;
   padding: 14px !important;
   text-transform: uppercase;
   font-size: 17px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .btn-outline-info {
   padding: 0 5px;
 }
-.text-healthy-living {
-  display: inline-block;
-  color: white;
-  padding-top: 20px;
-}
 
-.img-heart {
-  display: block;
-  float: left;
-  max-width: 70px;
-  margin-bottom: 5px;
-}
 /* =========================================
         HEALTHY LIVING SUPPORT GROUP  
 ============================================ */
@@ -229,7 +229,8 @@ section {
   margin-top: 60px !important;
 }
 #healthy-living .list-group .active {
-  background-color: #3292a6;
+  background-color: #17a2b8;
+  border: 1px solid #17a2b8;
   font-size: 18px;
   font-weight: 400;
 }
@@ -440,16 +441,13 @@ mark {
 .jumbotron h1 {
   text-align: center;
   font-weight: 400;
-  letter-spacing: 1px;
   word-spacing: 5px;
-}
-.jumbo-services h1 {
-  color: #282828;
 }
 
 .jumbo-appointment h1 {
-  color: #ce1d53;
+  color: #e2366a;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .jumbo-services {
@@ -461,7 +459,7 @@ mark {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 70px 0 60px 0;
+  padding: 60px 0 50px 0;
   margin: 0;
   border-radius: 0;
 }
@@ -587,6 +585,7 @@ mark {
 .office-photo-item {
   overflow: hidden;
   position: relative;
+  margin-bottom: 10px;
 }
 
 /* Overlay Effect */
@@ -636,6 +635,7 @@ mark {
 .jumbo-map {
   background-image: linear-gradient(#f7f7f7, white);
   padding: 80px 0;
+  margin: 0;
 }
 .google-map {
   height: 380px;

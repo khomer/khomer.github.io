@@ -63,6 +63,7 @@
   .navbar-brand img {
     width: 30px;
   }
+
   .navbar .nav-item .nav-link {
     margin: 0;
     padding: 10px;
@@ -186,13 +187,7 @@
     max-width: 320px;
     margin: 30px auto;
   }
-  .text-healthy-living {
-    padding: 0;
-  }
 
-  .img-heart {
-    display: none !important;
-  }
   .img-owl {
     max-width: 200px;
   }
