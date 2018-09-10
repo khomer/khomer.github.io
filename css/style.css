@@ -193,21 +193,22 @@ section {
   word-spacing: 5px;
   padding: 10px;
 }
-.btn-group-vertical {
+
+.btn-group-horizontal {
   display: block;
-  width: 350px;
-  margin: 80px auto;
+  margin: 70px auto;
   color: white;
   text-align: center;
 }
 .btn-info {
+  width: 200px;
+  height: 100px;
   font-family: 'Raleway', sans-serif;
   border-radius: 2px;
-  border: 0;
-  padding: 14px !important;
+  padding: 23px !important;
   text-transform: uppercase;
-  font-size: 17px;
-  margin-bottom: 15px;
+  font-size: 18px;
+  margin: 2px;
 }
 .btn-outline-info {
   padding: 0 5px;
@@ -564,7 +565,7 @@ section {
 }
 
 .pyfv-content {
- background: #fde8e7;
+  background: #fde8e7;
   padding: 30px 20px 10px 20px;
   margin-bottom: 10px;
   border-radius: 2px;
