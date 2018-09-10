@@ -564,7 +564,7 @@ section {
 }
 
 .pyfv-content {
-  background-image: linear-gradient(to bottom right, #ffddeb, #f5cedb);
+ background: #fde8e7;
   padding: 30px 20px 10px 20px;
   margin-bottom: 10px;
   border-radius: 2px;
