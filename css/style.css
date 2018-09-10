@@ -33,7 +33,9 @@ p {
 }
 
 mark {
-  padding: 0 6px;
+  padding: 5px 10px !important;
+  background-color: #e2366a !important;
+  color: white;
 }
 
 a:link,
@@ -47,8 +49,6 @@ a:active {
   color: #148496;
 }
 .text-pink {
-  /* color: #ce1d53; */
-  /* color: #e2366a; */
   color: #e64d7a;
 }
 
@@ -381,7 +381,7 @@ section {
 }
 #naturopathic-medcine-tabs ul li a:hover,
 #naturopathic-medcine-tabs ul li.r-tabs-state-active a:hover {
-  background: #b2d8d8;
+  background: #f7f7f7;
 }
 /* Tab active state */
 #naturopathic-medcine-tabs ul li.r-tabs-state-active a,
@@ -395,9 +395,10 @@ section {
   font-size: 24px;
   margin-bottom: 20px;
 }
-mark {
-  background: yellow;
-  font-weight: 600;
+#naturopathic-medcine mark {
+  background: yellow !important;
+  color: black !important;
+  font-weight: 600 !important;
 }
 .tab-content {
   padding: 0 20px;
@@ -492,6 +493,12 @@ mark {
     MAKE AN APPOINTMENT  
 ============================================ */
 
+#appointment h3,
+.jumbo-map h3,
+.office-photos-wrapper h3 {
+  font-size: 26px;
+}
+
 /* Appointment Contact Info */
 #appointment .card {
   background-color: #fff;
@@ -553,18 +560,14 @@ mark {
 .pyfv-heading {
   font-family: 'Crafty Girls', sans-serif;
   margin: 30px 0;
-  padding: 10px;
   text-align: center;
 }
 
 .pyfv-content {
-  background-image: linear-gradient(to bottom right, #ffddeb, #c2e8f3);
+  background-image: linear-gradient(to bottom right, #ffddeb, #f5cedb);
   padding: 30px 20px 10px 20px;
   margin-bottom: 10px;
-  border: 1px solid lightgray;
   border-radius: 2px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 .pyfv-content h5 {
   text-transform: capitalize;
