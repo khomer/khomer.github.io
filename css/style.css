@@ -82,7 +82,10 @@ section {
 
 .navbar {
   box-shadow: 1px 1px 2px #c0c0c0;
-  background: #fff;
+  /* background-image: linear-gradient(-40deg, #ffffff, #f7f7f7); */
+
+  /* http://www.december.com/html/spec/colorcodes.html */
+  background-image: linear-gradient(white, #fafafa);
   height: 90px;
 }
 
@@ -97,23 +100,29 @@ section {
   font-size: 17px;
   color: #212226;
   text-transform: uppercase;
-  margin-left: 1.5rem;
+  margin: 0.625rem 0 0 1.5rem;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  border-bottom: 2px solid transparent;
 }
-
+.navbar .nav-item .nav-link:hover {
+  background-image: radial-gradient(circle, #ef8fac, #fce9ee, #fce9ee);
+  border-radius: 2px;
+}
 .navbar-toggler-icon {
   margin: 5px;
 }
-
-.red-link {
+.pink-link {
   background: #e2366a;
-  border: 1px solid #e2366a;
+  border: 1px solid #e2366a !important;
   color: white !important;
   border-radius: 2px;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
-.red-link:hover {
-  opacity: 0.9;
+.pink-link:hover {
+  color: #e2366a !important;
+  font-weight: 500;
 }
 
 /* =========================================
@@ -200,15 +209,22 @@ section {
   color: white;
   text-align: center;
 }
-.btn-info {
+.btn-group-horizontal .btn {
   width: 200px;
   height: 100px;
   font-family: 'Raleway', sans-serif;
   border-radius: 2px;
-  padding: 23px !important;
+  padding: 22px;
   text-transform: uppercase;
   font-size: 18px;
   margin: 2px;
+}
+.btn-healthy-living {
+  background-image: linear-gradient(-45deg, #f8f83e, #e2366a);
+  border: 0;
+}
+.btn-healthy-living:hover {
+  background-image: linear-gradient(-45deg, #e2366a, #f8f83e);
 }
 .btn-outline-info {
   padding: 0 5px;
@@ -218,25 +234,44 @@ section {
         HEALTHY LIVING SUPPORT GROUP  
 ============================================ */
 #healthy-living .card {
-  border-radius: 2px;
+  border: 0;
+  border-radius: 0;
 }
+#healthy-living .bg-event {
+  background-image: linear-gradient(-45deg, #f8f83e, #e2366a);
+}
+#healthy-living .bg-group-leader {
+  background-color: #3fab9b;
+}
+#healthy-living .bg-mission {
+  background-color: #d2f5f9;
+}
+
 #healthy-living .list-group {
   margin-top: 60px !important;
 }
 #healthy-living .list-group .active {
-  background-color: #17a2b8;
-  border: 1px solid #17a2b8;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 120%;
+  background-color: #212226;
+  border: 1px solid #212226;
+  color: white;
+  text-align: center;
+  padding: 15px;
 }
 #healthy-living .list-group-item {
   border-radius: 2px;
   font-size: 17px;
   text-align: center;
+  text-transform: capitalize;
 }
 .invitations {
   text-align: center;
   padding: 20px 10px;
+}
+.btn-danger {
+  border-radius: 2px;
+  background: #e2366a;
+  border: 1px solid #e2366a;
 }
 /* =========================================
         ABOUT DR. ALLYN 
@@ -249,6 +284,7 @@ section {
 }
 .img-dr-wrapper {
   width: 290px;
+  border: 1px solid #212226;
   border: 1px solid lightgray;
   padding: 24px;
 }
@@ -271,7 +307,7 @@ section {
   text-align: center;
 }
 .about-content-middle {
-  margin: 40px;
+  margin: 50px;
 }
 
 /* =========================================
@@ -283,12 +319,16 @@ section {
 /* BS Popover */
 .media-object {
   max-width: 470px;
+  padding: 7px 5px;
   margin: auto;
 }
 
 .popover {
   max-width: 500px;
   width: auto;
+  background: #e5fafa;
+  border: 1px solid #18a2b8;
+  border-radius: 0;
 }
 #services h3 {
   padding: 40px 0 10px 0;
@@ -382,7 +422,7 @@ section {
 }
 #naturopathic-medcine-tabs ul li a:hover,
 #naturopathic-medcine-tabs ul li.r-tabs-state-active a:hover {
-  background: #f7f7f7;
+  background-image: linear-gradient(to right, #e8fafc, white);
 }
 /* Tab active state */
 #naturopathic-medcine-tabs ul li.r-tabs-state-active a,
@@ -401,7 +441,7 @@ section {
   color: black !important;
   font-weight: 600 !important;
 }
-.tab-content {
+#naturopathic-medcine .tab-content {
   padding: 0 20px;
 }
 .card .card-header:hover {
@@ -466,7 +506,7 @@ section {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 200px 0;
+  padding: 180px 0;
   margin: 0;
   border-radius: 0;
 }
@@ -485,7 +525,7 @@ section {
 .jumbo-pyfv {
   background: linear-gradient(#f4f4f4, white);
   text-align: center;
-  padding: 50px 10px 0 10px;
+  padding: 60px 10px 0 10px;
   margin: 80px 0 0 0;
   border-radius: 0;
 }
@@ -494,24 +534,54 @@ section {
     MAKE AN APPOINTMENT  
 ============================================ */
 
-#appointment h3,
-.jumbo-map h3,
-.office-photos-wrapper h3 {
+#appointment h3 {
   font-size: 26px;
 }
 
 /* Appointment Contact Info */
 #appointment .card {
-  background-color: #fff;
+  background: #e5fafa;
   border-radius: 2px;
-  padding: 40px 20px;
+  padding: 35px 20px 20px 20px;
   text-align: center;
   margin-bottom: 10px;
 }
 #appointment .card.active {
-  background: #a3dae3;
-  padding: 40px 20px 30px 20px;
+  /* background: #bbffff; */
+  background: linear-gradient(#fde8e7, #e5fafa);
+  padding: 30px 20px 20px 20px;
 }
+
+#appointment .card:hover,
+#appointment .card.active:hover {
+  background: linear-gradient(#fde8e7, #e5fafa);
+}
+
+/* CARD DIRECTIONS */
+#link-direction-wrapper {
+  background: #00868b;
+  border: 1px solid #00868b;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#link-direction-wrapper:hover {
+  color: white;
+  background: #212226;
+  border: 1px solid #4c4c4c;
+}
+
+#link-direction-wrapper a {
+  display: block;
+  font-size: 160%;
+  color: white;
+  line-height: 120px;
+  text-align: center;
+}
+#link-direction-wrapper a:hover {
+  color: white;
+  text-decoration: none;
+}
+
 #appointment .fa-home {
   color: #282828;
   font-size: 30px;
@@ -524,16 +594,14 @@ section {
 #appointment .card hr {
   width: 40px;
   height: 2px;
-  background-color: #212226;
-  margin: 20px auto 30px auto;
-}
-/* Hover state */
-#appointment .card:hover {
-  background: linear-gradient(white, #a3dae3);
+  background-color: #555;
+  margin: 20px auto 25px auto;
 }
 
+/* Hover state */
 #appointment .card p {
   font-size: 17px;
+  font-weight: 500;
 }
 #appointment .card:hover i {
   transform: translateY(-20px);
@@ -549,7 +617,7 @@ section {
 }
 .credit-card-group {
   display: inline-block;
-  margin: 10px 0 -26px 0;
+  margin: 10px 0 -10px 0;
 }
 .address {
   font-size: 20px;
@@ -576,10 +644,31 @@ section {
   font-weight: 500;
 }
 
-/* Office Photos */
-#office-photos-wrapper {
-  margin-top: 80px;
+/* =========================================
+    DIRECTIONS   
+============================================ */
+#directions {
+  padding: 30px 0 80px 0;
 }
+
+#directions h3 {
+  font-size: 26px;
+}
+
+.jumbo-directions {
+  background: #212226;
+  padding: 45px 0 30px 0;
+  margin-top: 15px;
+  border-radius: 0;
+}
+.jumbo-directions h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+  word-spacing: 5px;
+}
+
+/* Office Photos */
 .office-photo-item {
   overflow: hidden;
   position: relative;
@@ -610,11 +699,9 @@ section {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-.office-photo-item-details h3 {
-  color: white;
-  font-size: 20px;
+.office-photo-item-details h4 {
+  color: gold;
   font-weight: 400;
-  padding-bottom: 10px;
   -webkit-transform: translateY(-20%);
   transform: translateY(-20%);
   -webkit-transition: all 0.5s;
@@ -631,25 +718,27 @@ section {
 
 /* GOOGLE MAP */
 .jumbo-map {
-  background-image: linear-gradient(#f7f7f7, white);
-  padding: 80px 0;
-  margin: 0;
+  background-image: linear-gradient(#fee8ae, white);
+  border-bottom: 20px solid #fee8ae;
+  margin: 80px 0;
+  padding: 40px 0 0 0;
 }
 .google-map {
-  height: 380px;
-  width: 95%;
-  border: 1px solid lightgray;
+  height: 400px;
+  width: 100%;
+  border: 0;
 }
 /* =========================================
     KNOWLEDGE IS POWER    
 ============================================ */
-#knowledge-is-power {
+
+#knowledge {
   padding: 30px 0 80px 0;
 }
 .jumbo-knowledge {
   background: #212226;
-  padding: 40px 0 30px 0;
-  margin-top: 20px;
+  padding: 30px 0 20px 0;
+  margin-top: 15px;
   border-radius: 0;
 }
 .jumbo-knowledge h1 {
@@ -659,69 +748,63 @@ section {
   word-spacing: 5px;
   text-transform: uppercase;
 }
-.jumbo-knowledge h3 {
-  font-weight: 300;
-}
+
 .breadcrumb {
-  background: white;
-  padding: 30px 15px;
+  background: transparent;
+  padding: 20px 0;
   font-size: 20px;
 }
-.breadcrumb-item {
-  color: #3292a6;
+#knowledge .tab-content {
+  margin-left: -25px;
 }
-.helpful-books .nav {
-  margin: 30px 0 10px 50px;
+.text-page {
+  font-size: 130%;
+  margin: 10px 20px 0 0;
 }
-.helpful-books .nav-item {
-  font-size: 120%;
-  margin-right: 1px;
+.book-resource-wrapper {
+  padding: 25px;
+  background: #a04b6d;
+  color: white;
+  text-align: center;
+}
+.audio-resource-wrapper {
+  padding: 25px;
+  background: #adacac;
+  color: white;
+  text-align: center;
+}
+#knowledge .nav-pills .nav-link {
+  border-radius: 2px;
   border: 1px solid lightgray;
+  padding: 8px 15px;
+  margin: 2px;
+}
+#knowledge .nav-pills .nav-link.active,
+#knowledge .nav-pills .show > .nav-link {
+  color: #212226;
+  border: 1px solid #efdce4;
+  background: #efdce4;
   border-radius: 2px;
 }
-.helpful-books .card-header,
-.helpful-links .card-header {
-  background: #17a2b8;
-  text-transform: uppercase;
+#knowledge .table h4 {
+  font-size: 21px;
+}
+#knowledge #accordion .card-link {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
-.helpful-books .card-link,
-.helpful-links .card-link {
-  color: white;
-  font-size: 23px;
-}
-.helpful-books .card-header:hover,
-.helpful-links .card-header:hover {
-  background: #3292a6;
-}
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  border: 1px solid #17a2b8;
-  background: #17a2b8;
-}
-.helpful-books .tab-pane {
-  margin-top: 40px;
-}
-.helpful-books h4 {
-  font-size: 21px;
-  font-weight: 500;
-}
-/* HELPFUL LINKS */
-.helpful-links .list-group {
-  margin-top: 30px;
-}
-.helpful-links .list-group-item {
+#knowledge #accordion a,
+#knowledge .list-group-item {
   font-size: 20px;
-  border: 0;
 }
-.helpful-links .list-group .active {
-  background-image: linear-gradient(to right, lightgray, white);
-  color: #212226;
-  font-size: 20px;
-  font-weight: 500;
-  border-radius: 0;
+#knowledge #accordion .card-body {
+  padding: 10px 5px;
 }
+
 /* =========================================
     FOOTER   
 ============================================ */
