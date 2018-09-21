@@ -1,0 +1,825 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  color: #505050;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #212226;
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+mark {
+  padding: 5px 10px !important;
+  background-color: #e2366a !important;
+  color: white;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #148496;
+}
+
+.text-turquoise {
+  color: #148496;
+}
+.text-pink {
+  color: #e64d7a;
+}
+
+/* http://www.december.com/html/spec/colorcodes.html */
+
+/* =========================================
+        SECTION HEADINGS
+============================================ */
+section {
+  padding: 80px 0;
+  margin: 0;
+}
+
+.section-heading h2 {
+  font-size: 40px;
+  font-weight: 200;
+  text-align: center;
+}
+.section-heading span {
+  font-weight: 400;
+}
+
+.section-heading-underline {
+  width: 50px;
+  height: 5px;
+  background-color: #17a2b8;
+  margin: 30px auto 60px auto;
+}
+
+/* =========================================
+        NAVIGATION 
+============================================ */
+
+.navbar {
+  box-shadow: 1px 1px 2px #c0c0c0;
+  background-image: linear-gradient(white, #fcfcfc);
+  height: 90px;
+}
+
+.navbar-brand {
+  color: #303030 !important;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.navbar .nav-item .nav-link {
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  color: #212226;
+  text-transform: uppercase;
+  margin: 0.625rem 0 0 1.5rem;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+.navbar .nav-item .nav-link:hover {
+  background-image: radial-gradient(circle, #ef8fac, #fce9ee, #fce9ee);
+  border-radius: 2px;
+}
+.navbar-toggler-icon {
+  margin: 5px;
+}
+.pink-link {
+  background: #e2366a;
+  border: 1px solid #e2366a !important;
+  color: white !important;
+  border-radius: 2px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.pink-link:hover {
+  color: #e2366a !important;
+  font-weight: 500;
+}
+
+/* =========================================
+        HOME  
+============================================ */
+#home {
+  border: 1px solid transparent;
+  padding: 0;
+  margin: 0;
+}
+#carousel-wrapper {
+  position: relative;
+  padding: 0;
+  margin: 90px 0 60px 0;
+  width: 100%;
+  height: 88vh;
+}
+
+#home-carousel {
+  position: absolute;
+  width: 100%;
+  height: 88vh;
+  top: 0;
+  left: 0;
+}
+
+#carousel-wrapper .owl-carousel .item {
+  width: 100%;
+  height: 88vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+#carousel-wrapper .owl-carousel .item-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../img/home/computer-desk-doctor.jpg);
+}
+#carousel-wrapper .owl-carousel .item-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../img/home/apple-blank-business.jpg);
+}
+#carousel-wrapper .owl-carousel .item-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../img/home/bloom-blooming-blossom.jpg);
+}
+
+#carousel-wrapper .owl-theme .owl-nav.disabled + .owl-dots {
+  background: #212226;
+  margin: 0;
+  padding: 1.25rem;
+}
+.home-content-box {
+  width: 100%;
+  height: 100%;
+  display: table;
+  z-index: 10;
+  text-align: center;
+}
+.home-content-box-inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.home-content-box-inner h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block;
+  word-spacing: 5px;
+  padding: 20px 10px;
+}
+.home-content-box-inner h2 {
+  font-family: 'Crafty Girls', sans-serif;
+  color: #fff;
+  word-spacing: 5px;
+  padding: 10px;
+}
+
+.btn-group-horizontal {
+  display: block;
+  margin: 70px auto;
+  color: white;
+  text-align: center;
+}
+.btn-group-horizontal .btn {
+  width: 200px;
+  height: 100px;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 2px;
+  padding: 22px;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 2px;
+}
+.btn-healthy-living {
+  background-image: linear-gradient(-45deg, #f8f83e, #e2366a);
+  border: 0;
+}
+.btn-healthy-living:hover {
+  background-image: linear-gradient(-45deg, #e2366a, #f8f83e);
+}
+.btn-outline-info {
+  padding: 0 5px;
+}
+
+/* =========================================
+        HEALTHY LIVING SUPPORT GROUP  
+============================================ */
+#healthy-living .card {
+  border: 0;
+  border-radius: 0;
+}
+#healthy-living .bg-event {
+  background-image: linear-gradient(-45deg, #f8f83e, #e2366a);
+}
+#healthy-living .bg-group-leader {
+  background-color: #3fab9b;
+}
+#healthy-living .bg-mission {
+  background-color: #d2f5f9;
+}
+
+#healthy-living .list-group {
+  margin-top: 60px !important;
+}
+#healthy-living .list-group .active {
+  font-size: 120%;
+  background-color: #212226;
+  border: 1px solid #212226;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+#healthy-living .list-group-item {
+  border-radius: 2px;
+  font-size: 17px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.invitations {
+  text-align: center;
+  padding: 20px 10px;
+}
+.btn-danger {
+  border-radius: 2px;
+  background: #e2366a;
+  border: 1px solid #e2366a;
+}
+/* =========================================
+        ABOUT DR. ALLYN 
+============================================ */
+#about {
+  background: linear-gradient(white, #f7f7f7);
+}
+#about img:hover {
+  opacity: 0.7;
+}
+.img-dr-wrapper {
+  width: 290px;
+  border: 1px solid #212226;
+  border: 1px solid lightgray;
+  padding: 24px;
+}
+.img-bottle,
+.img-chives {
+  margin-top: 90px;
+  -webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+  transition: width 1s, height 1s, transform 1s;
+  border: 1px solid #f0f0f0;
+}
+.img-bottle:hover,
+.img-chives:hover {
+  -ms-transform: scale(1, 1.2);
+  -webkit-transform: scale(1, 1.2);
+  transform: scale(1, 1.2);
+}
+#about h3 {
+  padding: 0 0 15px 0;
+  font-size: 24px;
+  text-align: center;
+}
+.about-content-middle {
+  margin: 50px;
+}
+
+/* =========================================
+        SERVICES  
+============================================ */
+#services {
+  background: linear-gradient(white, #f7f7f7);
+}
+/* BS Popover */
+.media-object {
+  max-width: 470px;
+  padding: 7px 5px;
+  margin: auto;
+}
+
+.popover {
+  max-width: 500px;
+  width: auto;
+  background: #e5fafa;
+  border-radius: 0;
+}
+#services h3 {
+  padding: 40px 0 10px 0;
+  font-size: 24px;
+}
+#accordion .card {
+  border-radius: 0 !important;
+}
+.card-link {
+  color: #3292a6;
+  font-size: 130%;
+}
+.fa-arrow-circle-down {
+  padding-right: 10px;
+}
+#services-tabs ul {
+  margin-bottom: 80px;
+}
+/* Animate service box */
+#services .service-box-1,
+#services .service-box-2,
+#services .service-box-3,
+#services .service-box-4 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+#services .service-box-1 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+#services .service-box-2 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+#services .service-box-3 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+#services .service-box-4 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.service-box-1 img,
+.service-box-4 img {
+  height: 300px;
+  margin: 0 0 25px 0;
+}
+.img-hover figure {
+  background: rgba(102, 178, 178, 0.6);
+  height: 300px;
+}
+.img-hover figure img {
+  opacity: 1;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.img-hover figure:hover img {
+  opacity: 0.5;
+}
+.service-box-2 {
+  padding: 30px;
+  background: #ededeb;
+  height: 300px;
+  margin-bottom: 25px;
+}
+.service-box-3 {
+  padding: 30px;
+  background: #ededeb;
+  height: 300px;
+  margin-bottom: 25px;
+}
+
+#services .card-header {
+  background-image: linear-gradient(-90deg, #fcfcfc, #f3f0d7);
+  margin: 1px 0;
+}
+#services .card-link {
+  display: block;
+}
+
+/* =========================================
+                NATUROPATHIC MEDICINE 
+============================================ */
+#naturopathic-medcine {
+  background: linear-gradient(white, #f7f7f7);
+}
+#naturopathic-medcine-tabs ul {
+  margin-bottom: 80px;
+}
+#naturopathic-medcine-tabs ul li a {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  color: #212226;
+  text-transform: uppercase;
+  padding: 14px 20px;
+  text-decoration: none;
+  border: 1px solid #b2d8d8;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+#naturopathic-medcine-tabs ul li a:hover,
+#naturopathic-medcine-tabs ul li.r-tabs-state-active a:hover {
+  background-image: linear-gradient(to right, #e8fafc, white);
+}
+/* Tab active state */
+#naturopathic-medcine-tabs ul li.r-tabs-state-active a,
+#naturopathic-medcine-tabs ul li.r-tabs-state-active a:hover {
+  background: #17a2b8;
+  color: white;
+  font-weight: 500;
+}
+
+.naturopathic-medcine-tab h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+#naturopathic-medcine mark {
+  background: yellow !important;
+  color: black !important;
+  font-weight: 600 !important;
+}
+#naturopathic-medcine .tab-content {
+  padding: 0 20px;
+}
+.card .card-header:hover {
+  cursor: pointer;
+}
+/* =========================================
+                Testimonials
+============================================ */
+#testimonials {
+  background: linear-gradient(white, #f7f7f7);
+  height: auto;
+  padding-bottom: 100px;
+}
+#testimonial-slider {
+  background: #f4f4f4;
+  border: 1px solid lightgray;
+  border-top-right-radius: 40%;
+  padding: 40px 60px 40px 40px;
+}
+.testimonial h3 {
+  padding: 20px 0 20px 5px;
+}
+.testimonial span {
+  font-size: 17px;
+}
+.fa-comment {
+  color: #b2d8d8;
+  padding-right: 15px;
+}
+/* =========================================
+                JUMBOTRON
+============================================ */
+.jumbotron h1 {
+  text-align: center;
+  font-weight: 400;
+  word-spacing: 5px;
+}
+
+.jumbo-appointment h1 {
+  color: #e2366a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.jumbo-services {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url(../img/appointment/abstract-267046_960_720.png);
+
+  /* Parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0 50px 0;
+  margin: 0;
+  border-radius: 0;
+}
+.jumbo-testimonial {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/testimonial/adult-balloon-beautiful.jpg);
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 180px 0;
+  margin: 0;
+  border-radius: 0;
+}
+.jumbo-appointment {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url(../img/appointment/abstract-267046_960_720.png);
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0 40px 0;
+  margin: 0;
+  border-radius: 0;
+}
+.jumbo-pyfv {
+  background: linear-gradient(#f4f4f4, white);
+  text-align: center;
+  padding: 60px 10px 0 10px;
+  margin: 80px 0 0 0;
+  border-radius: 0;
+}
+
+/* =========================================
+    MAKE AN APPOINTMENT  
+============================================ */
+
+#appointment h3 {
+  font-size: 26px;
+}
+
+/* Appointment Contact Info */
+#appointment .card {
+  background: #e5fafa;
+  border-radius: 2px;
+  padding: 35px 20px 20px 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#appointment .card.active {
+  /* background: #bbffff; */
+  background: linear-gradient(#fde8e7, #e5fafa);
+  padding: 30px 20px 20px 20px;
+}
+
+#appointment .card:hover,
+#appointment .card.active:hover {
+  background: linear-gradient(#fde8e7, #e5fafa);
+}
+
+/* CARD DIRECTIONS */
+#link-direction-wrapper {
+  background: #00868b;
+  border: 1px solid #00868b;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#link-direction-wrapper:hover {
+  color: white;
+  background: #212226;
+  border: 1px solid #4c4c4c;
+}
+
+#link-direction-wrapper a {
+  display: block;
+  font-size: 160%;
+  color: white;
+  line-height: 120px;
+  text-align: center;
+}
+#link-direction-wrapper a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#appointment .fa-home {
+  color: #282828;
+  font-size: 30px;
+  padding-right: 10px;
+}
+#appointment .card i {
+  color: #282828;
+  font-size: 30px;
+}
+#appointment .card hr {
+  width: 40px;
+  height: 2px;
+  background-color: #555;
+  margin: 20px auto 25px auto;
+}
+
+/* Hover state */
+#appointment .card p {
+  font-size: 17px;
+  font-weight: 500;
+}
+#appointment .card:hover i {
+  transform: translateY(-20px);
+}
+/* Smooth transition */
+#appointment .card,
+#appointment .card i,
+#appointment .card hr,
+#appointment .card h4,
+#appointment .card p {
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+.credit-card-group {
+  display: inline-block;
+  margin: 10px 0 -10px 0;
+}
+.address {
+  font-size: 20px;
+  word-spacing: 3px;
+  font-weight: 300;
+  padding-top: 5px;
+}
+/* Prior to Your First Visit */
+.pyfv-heading {
+  font-family: 'Crafty Girls', sans-serif;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.pyfv-content {
+  background: #fde8e7;
+  padding: 30px 20px 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+.pyfv-content h5 {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* =========================================
+    DIRECTIONS   
+============================================ */
+#directions {
+  padding: 30px 0 80px 0;
+}
+
+#directions h3 {
+  font-size: 26px;
+}
+
+.jumbo-directions {
+  background: #212226;
+  padding: 45px 0 30px 0;
+  margin-top: 15px;
+  border-radius: 0;
+}
+.jumbo-directions h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: white;
+  word-spacing: 5px;
+}
+
+/* Office Photos */
+.office-photo-item {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+/* Overlay Effect */
+.office-photo-item-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  cursor: -webkit-zoom-in;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* Item Details Effect */
+.office-photo-item-details {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.office-photo-item-details h4 {
+  color: gold;
+  font-weight: 400;
+  -webkit-transform: translateY(-20%);
+  transform: translateY(-20%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* Show Overlay on mouse over */
+.office-photo-item:hover .office-photo-item-details h3 {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.office-photo-item:hover .office-photo-item-overlay {
+  opacity: 1;
+}
+
+/* GOOGLE MAP */
+.jumbo-map {
+  background-image: linear-gradient(#fee8ae, white);
+  border-bottom: 20px solid #fee8ae;
+  margin: 80px 0;
+  padding: 40px 0 0 0;
+}
+.google-map {
+  height: 400px;
+  width: 100%;
+  border: 0;
+}
+/* =========================================
+    KNOWLEDGE IS POWER    
+============================================ */
+
+#knowledge {
+  padding: 30px 0 80px 0;
+}
+.jumbo-knowledge {
+  background: #212226;
+  padding: 30px 0 20px 0;
+  margin-top: 15px;
+  border-radius: 0;
+}
+.jumbo-knowledge h1 {
+  font-size: 33px;
+  color: #f4c613;
+  font-weight: 400;
+  word-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.breadcrumb {
+  background: transparent;
+  padding: 20px 0;
+  font-size: 20px;
+}
+#knowledge .tab-content {
+  margin-left: -25px;
+}
+.text-page {
+  font-size: 130%;
+  margin: 10px 20px 0 0;
+}
+.book-resource-wrapper {
+  padding: 25px;
+  background: #a04b6d;
+  color: white;
+  text-align: center;
+}
+.audio-resource-wrapper {
+  padding: 25px;
+  background: #adacac;
+  color: white;
+  text-align: center;
+}
+#knowledge .nav-pills .nav-link {
+  border-radius: 2px;
+  border: 1px solid lightgray;
+  padding: 8px 15px;
+  margin: 2px;
+}
+#knowledge .nav-pills .nav-link.active,
+#knowledge .nav-pills .show > .nav-link {
+  color: #212226;
+  border: 1px solid #efdce4;
+  background: #efdce4;
+  border-radius: 2px;
+}
+#knowledge .table h4 {
+  font-size: 21px;
+}
+#knowledge #accordion .card-link {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+#knowledge #accordion a,
+#knowledge .list-group-item {
+  font-size: 20px;
+}
+#knowledge #accordion .card-body {
+  padding: 10px 5px;
+}
+
+/* =========================================
+    FOOTER   
+============================================ */
+footer {
+  background: #212226;
+  color: #e8e8e8;
+  word-spacing: 5px;
+  padding: 50px 0 30px 0;
+  font-weight: 300;
+  text-align: center;
+}
