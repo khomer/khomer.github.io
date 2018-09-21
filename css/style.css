@@ -52,6 +52,8 @@ a:active {
   color: #e64d7a;
 }
 
+/* http://www.december.com/html/spec/colorcodes.html */
+
 /* =========================================
         SECTION HEADINGS
 ============================================ */
@@ -324,7 +326,6 @@ section {
   max-width: 500px;
   width: auto;
   background: #e5fafa;
-  border: 1px solid #18a2b8;
   border-radius: 0;
 }
 #services h3 {
@@ -397,6 +398,15 @@ section {
   height: 300px;
   margin-bottom: 25px;
 }
+
+#services .card-header {
+  background-image: linear-gradient(-90deg, #fcfcfc, #f3f0d7);
+  margin: 1px 0;
+}
+#services .card-link {
+  display: block;
+}
+
 /* =========================================
                 NATUROPATHIC MEDICINE 
 ============================================ */
