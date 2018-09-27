@@ -8,7 +8,19 @@
 
 @media (max-width: 1199px) {
   .home-content-box-inner h1 {
-    font-size: 55px;
+    font-size: 45px;
+    padding: 0;
+    margin: 10px 10px 50px 10px;
+  }
+
+  .btn-group-horizontal {
+    margin: 40px auto !important;
+  }
+
+  .btn-group-horizontal .btn {
+    width: auto !important;
+    height: auto !important;
+    padding: 10px 20px;
   }
 }
 
@@ -78,11 +90,14 @@
   #carousel-wrapper {
     margin: auto 0 40px 0;
   }
+
   .home-content-box-inner h1 {
-    font-size: 45px;
+    font-size: 30px;
+    margin: 80px 10px 0 10px;
+    padding: 0;
   }
   .home-content-box-inner h2 {
-    font-size: 20px;
+    display: none;
   }
 
   /* About Dr. Allyn */
@@ -181,14 +196,16 @@
 @media (max-width: 480px) {
   /* Home */
   .home-content-box-inner h1 {
-    padding-top: 80px;
     font-size: 33px;
   }
   .home-content-box-inner h2 {
     display: none;
   }
-  .btn-group-horizontal {
-    margin: auto;
+
+  .btn-group-horizontal .btn {
+    min-width: 250px;
+    height: 250px;
+    padding: 5px;
   }
   .img-owl {
     max-width: 200px;
